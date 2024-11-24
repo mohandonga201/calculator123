@@ -27,7 +27,7 @@ pipeline {
             steps {
                 script {
                     // Test the Docker image
-                    sh 'docker run -d -p 8080:80 $REGISTRY/$REPOSITORY:$BUILD_NUMBER'
+                    sh 'docker run -d -p 8081:80 $REGISTRY/$REPOSITORY:$BUILD_NUMBER'
                     // You can add automated tests here, e.g., curl or selenium
                     sleep(5) // Wait for the container to start
                     sh 'curl -f http://3.110.49.134:8080 || exit 1'
