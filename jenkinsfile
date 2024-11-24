@@ -4,7 +4,7 @@ pipeline {
     environment {
         IMAGE_NAME = 'web-calculator'
         REGISTRY = 'docker.io'
-        REPOSITORY = 'your_dockerhub_username/web-calculator'
+        REPOSITORY = 'mohan201/web-calculator'
     }
 
     stages {
